@@ -1,0 +1,20 @@
+iapiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: symdoc-ui
+spec:
+  replicas: 2
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: symdoc-ui
+  template:
+    metadata:
+      labels:
+        app: symdoc-ui
+    spec:
+      containers:
+      - image: dockerhub.nie.netease.com/venice/symphonydocs:latest
+        name: symdoc-ui
+        ports:
+        - containerPort: 80
