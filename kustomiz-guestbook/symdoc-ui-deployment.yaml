@@ -14,7 +14,7 @@ spec:
         app: symdoc-ui
     spec:
       containers:
-      - image: dockerhub.nie.netease.com/venice/symphonydocs:latest
+      - image: dockerhub.nie.netease.com/venice/symphonydocs:20200401_release
         name: symdoc-ui
         ports:
         - containerPort: 80
