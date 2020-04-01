@@ -14,7 +14,7 @@ spec:
         app: symdoc-ui
     spec:
       containers:
-      - image: dockerhub.nie.netease.com/venice/symphonydocs:20200401_release
+      - image: jinxingf/argocd-demo:latest
         name: symdoc-ui
         ports:
         - containerPort: 80
